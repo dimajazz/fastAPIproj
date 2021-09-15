@@ -1,0 +1,19 @@
+# Create virtual environment
+python -m venv myvenv
+
+# Activate virtual environment
+myvenv\Scripts\activate
+# source myvenv/bin/activate
+
+# Install libs & packeges
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+
+# Start app
+python .\src\workshop\app.py
+
+# Docs are on the link
+http://127.0.0.1:8000/docs
+
+# Put in JWT secret in .env
+JWT_SECRET=your-secret
